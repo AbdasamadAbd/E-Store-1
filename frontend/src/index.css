@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Prata&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: "Outfit";
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.prata_regular {
+    font-family: "Prata", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+
+
+/* make the navItems bottom bar be visible */
+a.active hr {
+    display: block;
+}
+
+@media (max-width: 640px) {
+    a.active {
+        background-color: black;
+        color: white;
+    }
+}
